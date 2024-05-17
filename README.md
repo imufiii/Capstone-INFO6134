@@ -28,10 +28,10 @@ Arul:
 5. user can shake device for some useful effect
 
 Shahryar Salim: 
-1.⁠ ⁠User can change language
-2.⁠ ⁠⁠User can view details(score, name, and result of win or lose) for the team they have chose
-3.⁠ ⁠⁠User can set reminder of a certain task to perform 
-4.⁠ ⁠User can delete the team they chose.
+1. ⁠User can change language
+2. ⁠⁠User can view details(score, name, and result of win or lose) for the team they have chose
+3. User can set reminder of a certain task to perform 
+4. ⁠⁠User can delete the team they chose.
 
 Mufeed Muneer:  
 1. User can add and retrieve details of team using api
