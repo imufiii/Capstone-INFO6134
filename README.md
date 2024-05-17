@@ -32,3 +32,8 @@ Shahryar Salim:
 2.⁠ ⁠⁠User can view details(score, name, and result of win or lose) for the team they have chose
 3.⁠ ⁠⁠User can set reminder of a certain task to perform 
 4.⁠ ⁠User can delete the team they chose.
+Mufeed Muneer:  
+1. User can add and retrieve details of team using api
+2. ⁠users can save (team retrieved from api) as favourites 
+3. ⁠users have an animated splash screen when starting app
+4. ⁠users can add and bet on the team scores
