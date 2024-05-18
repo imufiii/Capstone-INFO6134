@@ -20,7 +20,7 @@ Shahryar Salim
 
 ## Features:
 
-Arul sajeevkumar:
+Arul Sajeevkumar:
 1. Users can set the app to dark or light mode in the apps settings
 2. user can search for a team using api
 3. user can scan qrcode to add preferences of their team and then retreive those preferences on the app
