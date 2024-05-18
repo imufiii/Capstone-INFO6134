@@ -37,4 +37,3 @@ Mufeed Muneer:
 2. ⁠users can save (team retrieved from api) as favourites 
 3. ⁠users have an animated splash screen when starting app
 4. ⁠users can add and bet on the team scores
->>>>>>> aa89d2a7e06d9501734d14e2998b484671d11e89
