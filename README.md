@@ -22,8 +22,8 @@ Shahryar Salim
 
 Arul Sajeevkumar:
 1. Users can set the app to dark or light mode in the apps settings
-2. user can search for a team using api
-3. user can scan qrcode to add preferences of their team and then retreive those preferences on the app
+2. user can get match fixtures and league schedule
+3. user have an in app tutorial when using the app for the first time.
 4. user can earn achievements badges
 
 Shahryar Salim: 
