@@ -36,4 +36,4 @@ Mufeed Muneer:
 1. users can save a Team as favourites
 2. users can add and bet on the team scores
 3. ⁠users have an animated splash screen when starting app
-4. ⁠users can add and bet on the team scores
+4. ⁠user can scan qrcode
