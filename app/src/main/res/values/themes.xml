@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Capstone_BallLife" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.CapstoneINFO6134" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.Capstone_BallLife" parent="Base.Theme.Capstone_BallLife" />
+    <style name="Theme.CapstoneINFO6134" parent="Base.Theme.CapstoneINFO6134" />
 </resources>

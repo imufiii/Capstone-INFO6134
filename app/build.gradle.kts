@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "ssalim.example.capstone_balllife"
+    namespace = "ssalim.example.capstone_info6134"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "ssalim.example.capstone_balllife"
+        applicationId = "ssalim.example.capstone_info6134"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

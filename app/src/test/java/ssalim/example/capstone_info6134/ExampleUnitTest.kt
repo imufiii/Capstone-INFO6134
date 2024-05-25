@@ -1,4 +1,4 @@
-package ssalim.example.capstone_balllife
+package ssalim.example.capstone_info6134
 
 import org.junit.Test
 
