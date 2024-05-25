@@ -18,7 +18,7 @@ Arul:
 5. user can shake device for some useful effect
 
 Mufeed Muneer:  
-1. User can add and retrieve details of team using api
-2. ⁠users can save (team retrieved from api) as favourites 
+1. users can save a Team as favourites
+2. users can add and bet on the team scores
 3. ⁠users have an animated splash screen when starting app
-4. ⁠users can add and bet on the team scores
+4. user can scan qrcode 
