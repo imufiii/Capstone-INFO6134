@@ -29,7 +29,7 @@ Arul Sajeevkumar:
 Shahryar Salim: 
 1. ⁠User can change language
 2. ⁠⁠User can view details(score, name, and result of win or lose) for the team they have chose
-3. User can set reminder of a certain task to perform 
+3. User can set reminder (date/time) for betting on a team or to check the team score.
 4. ⁠⁠⁠⁠User can organize, group, filter or sort the teams they have chosen.
 
 Mufeed Muneer:  
