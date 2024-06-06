@@ -53,7 +53,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView3"
+        android:id="@+id/cardView2"
         android:layout_width="371dp"
         android:layout_height="174dp"
         android:layout_marginStart="20dp"
@@ -63,7 +63,7 @@
         android:clickable="true"
         android:focusable="true"
         android:onClick="onCardClick"
-        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView">
@@ -89,7 +89,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
+        android:id="@+id/cardView3"
         android:layout_width="371dp"
         android:layout_height="174dp"
         android:layout_marginStart="20dp"
@@ -100,7 +100,7 @@
         android:onClick="onCardClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
         <LinearLayout
             android:layout_width="match_parent"
