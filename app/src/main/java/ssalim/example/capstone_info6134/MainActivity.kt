@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +18,15 @@ class MainActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.menu, menu)
         return true
     }
+
+    fun onCardClick(view: View) {
+        when (view.id) {
+            R.id.cardView -> Toast.makeText(this, "Card 1 Clicked", Toast.LENGTH_SHORT).show()
+            R.id.cardView2 -> Toast.makeText(this, "Card 3 Clicked", Toast.LENGTH_SHORT).show()
+            R.id.cardView3 -> Toast.makeText(this, "Card 2 Clicked", Toast.LENGTH_SHORT).show()
+        }
+    }
+
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         // Handle action bar item clicks here.
