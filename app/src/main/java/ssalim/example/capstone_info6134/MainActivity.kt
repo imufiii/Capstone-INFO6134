@@ -15,12 +15,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val myFavoriteTeam = sharedPreference.getSavedTeam(this)
+                val myFavoriteTeam = sharedPreference.getSavedTeam(this)
         if (myFavoriteTeam == null) {
             showYourFavoriteTeamDialog()
         } else {
             Toast.makeText(this, "Your favorite team is: $myFavoriteTeam", Toast.LENGTH_SHORT).show()
         }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showYourFavoriteTeamDialog() {
+
         val spinner = Spinner(this)
         val adapter = ArrayAdapter.createFromResource(
             this,
@@ -52,6 +54,8 @@ class MainActivity : AppCompatActivity() {
             .setCancelable(false)
             .show()
     }
+
+
 
     fun onCardClick(view: View) {
         when (view.id) {

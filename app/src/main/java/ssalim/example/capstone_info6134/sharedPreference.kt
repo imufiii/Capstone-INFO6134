@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 
 object sharedPreference {
+
     private const val PREF_NAME = "app_prefs"
     private const val KEY_FAVORITE_TEAM = "favorite_team"
 
