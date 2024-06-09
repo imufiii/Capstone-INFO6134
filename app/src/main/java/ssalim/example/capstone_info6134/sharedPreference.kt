@@ -21,4 +21,11 @@ object sharedPreference {
         val preferences: SharedPreferences = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
         return preferences.getString(KEY_FAVORITE_TEAM, null)
     }
+
+    fun deleteTeam(context: Context) {
+        val preferences: SharedPreferences = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
+        val editor = preferences.edit()
+        editor.remove(KEY_FAVORITE_TEAM)
+        editor.apply()
+    }
 }

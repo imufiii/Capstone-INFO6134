@@ -15,7 +15,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-                val myFavoriteTeam = sharedPreference.getSavedTeam(this)
+        val myFavoriteTeam= sharedPreference.getSavedTeam(this)
+
         if (myFavoriteTeam == null) {
             showYourFavoriteTeamDialog()
         } else {
@@ -47,6 +48,9 @@ class MainActivity : AppCompatActivity() {
             .setPositiveButton("Go Team!") { dialog, which ->
                 val selectedTeam = spinner.selectedItem.toString()
                 sharedPreference.saveTeam(this, selectedTeam)
+                val intent = Intent(this, favouriteActivity::class.java)
+                intent.putExtra("TEAM_NAME", selectedTeam)
+                startActivity(intent)
                 Toast.makeText(this, "You picked: $selectedTeam", Toast.LENGTH_SHORT).show()
 
             }
@@ -82,6 +86,12 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.action_about -> {
                 Toast.makeText(this, "About selected", Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.action_fav -> {
+                Toast.makeText(this,"Favourite Selected ", Toast.LENGTH_SHORT).show()
+                val intent= Intent(this,favouriteActivity::class.java)
+                startActivity(intent)
                 true
             }
             else -> super.onOptionsItemSelected(item)
