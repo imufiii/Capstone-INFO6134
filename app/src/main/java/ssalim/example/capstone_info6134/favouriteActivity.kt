@@ -11,20 +11,22 @@ class favouriteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_favourite)
         val teamNameTextView = findViewById<TextView>(R.id.tv_team_name)
-        val selectedTeam = intent.getStringExtra("TEAM_NAME")
 
 
-        teamNameTextView.text = "Team Name: $selectedTeam"
-        val deleteButton = findViewById<Button>(R.id.btn_delete)
-        deleteButton.setOnClickListener {
-            deleteFavoriteTeam(this)
+        val savedTeamName = sharedPreference.getSavedTeam(this)
+
+        teamNameTextView.text = "Team Name: $savedTeamName" ?: "No Team Chosen"
+
+        findViewById<Button>(R.id.btn_delete).setOnClickListener {
+
+            deleteFavoriteTeam()
+
             finish()
         }
     }
 
-        private fun deleteFavoriteTeam(context: Context) {
-            // Delete the shared preference data
-            sharedPreference.deleteTeam(context)
+        private fun deleteFavoriteTeam() {
+            sharedPreference.deleteTeam(this)
         }
 
 }

@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu, menu)
         return true
@@ -49,7 +51,6 @@ class MainActivity : AppCompatActivity() {
                 val selectedTeam = spinner.selectedItem.toString()
                 sharedPreference.saveTeam(this, selectedTeam)
                 val intent = Intent(this, favouriteActivity::class.java)
-                intent.putExtra("TEAM_NAME", selectedTeam)
                 startActivity(intent)
                 Toast.makeText(this, "You picked: $selectedTeam", Toast.LENGTH_SHORT).show()
 
