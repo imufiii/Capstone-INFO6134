@@ -23,6 +23,7 @@ class favouriteActivity : AppCompatActivity() {
     }
 
         private fun deleteFavoriteTeam(context: Context) {
+            // Delete the shared preference data
             sharedPreference.deleteTeam(context)
         }
 
