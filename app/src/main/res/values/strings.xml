@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">BallLife</string>
-    <string-array name="teams_array">
+    <string-array name="teams_List">
         <item>Team A</item>
         <item>Team B</item>
         <item>Team C</item>
         <item>Team D</item>
-        <!-- Add more teams as needed -->
+
     </string-array>
 </resources>
