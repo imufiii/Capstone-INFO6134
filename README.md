@@ -33,7 +33,7 @@ Shahryar Salim:
 4. ⁠⁠⁠⁠User can organize, group, filter or sort the teams they have chosen.
 
 Mufeed Muneer:  
-1. users can save a Team as favourites
+1. users can save and delete a Team as favourites
 2. users can add and bet on the team scores
 3. ⁠users have an animated splash screen when starting app
 4. ⁠user can scan qrcode
