@@ -70,10 +70,10 @@ class MainActivity : AppCompatActivity() {
             R.id.cardView2 -> {
                 val intent = Intent(this, TodayActivity::class.java)
                 startActivity(intent)
-                Toast.makeText(this, "Card 2 Clicked", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "League Fixture", Toast.LENGTH_SHORT).show()
             }
             R.id.cardView3 -> {
-                Toast.makeText(this, "Card 3 Clicked", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Team Betting", Toast.LENGTH_SHORT).show()
             }
         }
     }
