@@ -1,5 +1,6 @@
 package ssalim.example.capstone_info6134
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -54,9 +55,17 @@ class MainActivity : AppCompatActivity() {
 
     fun onCardClick(view: View) {
         when (view.id) {
-            R.id.cardView -> Toast.makeText(this, "Card 1 Clicked", Toast.LENGTH_SHORT).show()
-            R.id.cardView2 -> Toast.makeText(this, "Card 2 Clicked", Toast.LENGTH_SHORT).show()
-            R.id.cardView3 -> Toast.makeText(this, "Card 3 Clicked", Toast.LENGTH_SHORT).show()
+            R.id.teamDetails -> {
+                Toast.makeText(this, "Team Details", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, TeamDetails::class.java)
+                startActivity(intent)
+            }
+            R.id.cardView2 -> {
+                Toast.makeText(this, "Card 2 Clicked", Toast.LENGTH_SHORT).show()
+            }
+            R.id.cardView3 -> {
+                Toast.makeText(this, "Card 3 Clicked", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 

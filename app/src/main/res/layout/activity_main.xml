@@ -24,7 +24,7 @@
             app:srcCompat="@drawable/logo" />
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
+            android:id="@+id/teamDetails"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -70,7 +70,7 @@
             android:onClick="onCardClick"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView">
+            app:layout_constraintTop_toBottomOf="@+id/teamDetails">
 
             <LinearLayout
                 android:layout_width="match_parent"
