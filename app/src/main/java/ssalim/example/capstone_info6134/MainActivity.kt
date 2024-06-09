@@ -15,12 +15,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val myFavoriteTeam = sharedPreference.getSavedTeam(this)
-        if (myFavoriteTeam == null) {
-            showYourFavoriteTeamDialog()
-        } else {
-            Toast.makeText(this, "Your favorite team is: $myFavoriteTeam", Toast.LENGTH_SHORT).show()
-        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -28,30 +23,7 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
-    private fun showYourFavoriteTeamDialog() {
-        val spinner = Spinner(this)
-        val adapter = ArrayAdapter.createFromResource(
-            this,
-            R.array.teams_List,
-            android.R.layout.simple_spinner_item
-        )
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        spinner.adapter = adapter
 
-
-        AlertDialog.Builder(this)
-            .setTitle("Pick Your Favorite Team")
-            .setView(spinner)
-            .setPositiveButton("Go Team!") { dialog, which ->
-                val selectedTeam = spinner.selectedItem.toString()
-                sharedPreference.saveTeam(this, selectedTeam)
-                Toast.makeText(this, "You picked: $selectedTeam", Toast.LENGTH_SHORT).show()
-
-            }
-            .setNegativeButton("Maybe Later", null)
-            .setCancelable(false)
-            .show()
-    }
 
     fun onCardClick(view: View) {
         when (view.id) {
