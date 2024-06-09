@@ -26,11 +26,11 @@ Arul Sajeevkumar:
 3. user have an in app tutorial when using the app for the first time.
 4. user can earn achievements badges
 
-Shahryar Salim: 
-1. ⁠User can change language
-2. ⁠⁠User can view details(score, name, and result of win or lose) for the team they have chose
-3. User can set reminder (date/time) for betting on a team or to check the team score.
-4. ⁠⁠⁠⁠User can organize, group, filter or sort the teams they have chosen.
+Shahryar Salim:  
+1. ⁠User can change language 
+2. ⁠⁠User can view details(score, name, and result of win or lose) for the team they have chose 
+3. User can set reminder (date/time) for betting on a team or to check the team score. 
+4. ⁠⁠⁠⁠User can organize, group, filter or sort the teams they have chosen. 
 
 Mufeed Muneer:  
 1. users can save a Team as favourites
