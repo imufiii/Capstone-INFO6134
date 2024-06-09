@@ -61,6 +61,8 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
             R.id.cardView2 -> {
+                val intent = Intent(this, TodayActivity::class.java)
+                startActivity(intent)
                 Toast.makeText(this, "Card 2 Clicked", Toast.LENGTH_SHORT).show()
             }
             R.id.cardView3 -> {
