@@ -50,8 +50,6 @@ class MainActivity : AppCompatActivity() {
             .setPositiveButton("Go Team!") { dialog, which ->
                 val selectedTeam = spinner.selectedItem.toString()
                 sharedPreference.saveTeam(this, selectedTeam)
-                val intent = Intent(this, favouriteActivity::class.java)
-                startActivity(intent)
                 Toast.makeText(this, "You picked: $selectedTeam", Toast.LENGTH_SHORT).show()
 
             }
