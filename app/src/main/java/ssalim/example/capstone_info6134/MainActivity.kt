@@ -15,7 +15,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-                val myFavoriteTeam = sharedPreference.getSavedTeam(this)
+        val myFavoriteTeam= sharedPreference.getSavedTeam(this)
+
         if (myFavoriteTeam == null) {
             showYourFavoriteTeamDialog()
         } else {
@@ -23,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu, menu)
@@ -67,10 +70,10 @@ class MainActivity : AppCompatActivity() {
             R.id.cardView2 -> {
                 val intent = Intent(this, TodayActivity::class.java)
                 startActivity(intent)
-                Toast.makeText(this, "Card 2 Clicked", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "League Fixture", Toast.LENGTH_SHORT).show()
             }
             R.id.cardView3 -> {
-                Toast.makeText(this, "Card 3 Clicked", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Team Betting", Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -84,6 +87,12 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.action_about -> {
                 Toast.makeText(this, "About selected", Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.action_fav -> {
+                Toast.makeText(this,"Favourite Selected ", Toast.LENGTH_SHORT).show()
+                val intent= Intent(this,favouriteActivity::class.java)
+                startActivity(intent)
                 true
             }
             else -> super.onOptionsItemSelected(item)

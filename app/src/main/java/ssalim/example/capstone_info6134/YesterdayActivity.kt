@@ -10,6 +10,7 @@ class YesterdayActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_yesterday)
 
+
         val buttonToday: Button = findViewById(R.id.buttonToday)
         buttonToday.setOnClickListener {
             val intent = Intent(this, TodayActivity::class.java)
