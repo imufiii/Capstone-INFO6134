@@ -27,7 +27,6 @@
             android:textSize="11sp"
             app:cornerRadius="8dp" />
 
-
         <Button
             android:id="@+id/buttonToday"
             style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
@@ -321,7 +320,5 @@
         </LinearLayout>
 
     </ScrollView>
-
-
 
 </RelativeLayout>
