@@ -1,8 +1,9 @@
 package ssalim.example.capstone_info6134
 
-import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 
@@ -15,18 +16,30 @@ class favouriteActivity : AppCompatActivity() {
 
         val savedTeamName = sharedPreference.getSavedTeam(this)
 
-        teamNameTextView.text = "Team Name: $savedTeamName" ?: "No Team Chosen"
+        if (savedTeamName != null) {
+            teamNameTextView.text = "Team Name: $savedTeamName"
+            findViewById<Button>(R.id.btn_delete).visibility = View.VISIBLE
+        } else {
+            findViewById<Button>(R.id.btn_delete).visibility = View.GONE
+            teamNameTextView.text = "No Team Chosen"
+        }
 
         findViewById<Button>(R.id.btn_delete).setOnClickListener {
 
-            deleteFavoriteTeam()
-
-            finish()
+            showConfirmationDialog()
+        }
+        findViewById<Button>(R.id.btn_back).setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 
-        private fun deleteFavoriteTeam() {
-            sharedPreference.deleteTeam(this)
-        }
+    private fun showConfirmationDialog() {
+        sharedPreference.deleteTeam(this, this)
+    }
+
+    fun onTeamDeleted() {
+        finish()
+    }
 
 }
