@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.core.content.ContextCompat.startActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,7 +52,9 @@ class MainActivity : AppCompatActivity() {
                 val selectedTeam = spinner.selectedItem.toString()
                 sharedPreference.saveTeam(this, selectedTeam)
                 Toast.makeText(this, "You picked: $selectedTeam", Toast.LENGTH_SHORT).show()
-
+                sharedPreference.saveTeam(this, "Team A")
+                sharedPreference.saveTeamScore(this, "10-5")
+                sharedPreference.saveTeamResult(this, "WINNER")
             }
             .setNegativeButton("Maybe Later", null)
             .setCancelable(false)

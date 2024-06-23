@@ -6,4 +6,10 @@
     <color name="red">#FC3D39</color>
     <color name="grey">#8e8e93</color>
     <color name="greyish">#272727</color>
+    <color name="bg1">#F5F5F5</color>
+    <color name="bg2">#FFFFFF</color>
+    <color name="pt1">#212121</color>
+    <color name="st1">#757575</color>
+    <color name="bb1">#6200EE</color>
+    <color name="bt1">#FFFFFF</color>
 </resources>
