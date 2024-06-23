@@ -59,7 +59,7 @@ object sharedPreference {
                 val editor = preferences.edit()
                 editor.remove(KEY_FAVORITE_TEAM)
                 editor.apply()
-                callback.onTeamDeleted() // Invoke callback after deletion
+                callback.onTeamDeleted()
             }
             .setNegativeButton("Cancel", null)
             .show()
