@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Buttons Layout -->
     <LinearLayout
         android:id="@+id/buttonsLayout"
         android:layout_width="match_parent"
@@ -22,11 +22,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="13dp"
-            android:backgroundTint="#272727"
+            android:backgroundTint="@color/greyish"
             android:text="Yesterday"
             android:textSize="11sp"
             app:cornerRadius="8dp" />
-
 
         <Button
             android:id="@+id/buttonToday"
@@ -53,6 +52,7 @@
 
     </LinearLayout>
 
+    <!-- ScrollView to contain multiple CardViews -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -63,6 +63,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <!-- CardView Layout 1 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -75,6 +76,7 @@
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
+                <!-- Content Inside CardView -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -92,6 +94,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/textGameNumber1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Game no: 6"
@@ -122,6 +125,7 @@
                                 android:src="@drawable/new_york_knicks_logo_primary_20129558" />
 
                             <TextView
+                                android:id="@+id/textTeamHome1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
@@ -132,7 +136,7 @@
                         </LinearLayout>
 
                         <TextView
-                            android:id="@+id/time_1"
+                            android:id="@+id/textTime1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="8dp"
@@ -164,6 +168,7 @@
                                 android:src="@drawable/cavaliers" />
 
                             <TextView
+                                android:id="@+id/textTeamAway1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
@@ -176,6 +181,7 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <TextView
+                        android:id="@+id/textVenue1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="5dp"
@@ -184,11 +190,22 @@
                         android:textColor="@color/white"
                         android:textSize="15sp"
                         android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/textLeague1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="League: NBA"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <Button
-                android:id="@+id/backUpComing"
+                android:id="@+id/backToday"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"

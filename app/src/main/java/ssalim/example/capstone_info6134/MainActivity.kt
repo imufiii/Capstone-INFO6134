@@ -68,7 +68,9 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
             R.id.cardView2 -> {
+                val randomFixtures = FixtureGenerator.generateRandomFixtures(3)
                 val intent = Intent(this, TodayActivity::class.java)
+                intent.putExtra("randomFixtures", randomFixtures.toTypedArray())
                 startActivity(intent)
                 Toast.makeText(this, "League Fixture", Toast.LENGTH_SHORT).show()
             }
