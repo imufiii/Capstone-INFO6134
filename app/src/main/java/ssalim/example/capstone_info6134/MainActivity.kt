@@ -20,8 +20,6 @@ class MainActivity : AppCompatActivity() {
 
         if (myFavoriteTeam == null) {
             showYourFavoriteTeamDialog()
-        } else {
-            Toast.makeText(this, "Your favorite team is: $myFavoriteTeam", Toast.LENGTH_SHORT).show()
         }
 
     }
@@ -58,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                 val homeGround = resources.getStringArray(R.array.teams_homeground)[teamIndex]
                 val wins = resources.getStringArray(R.array.teams_wins)[teamIndex]
                 val coach = resources.getStringArray(R.array.teams_coach)[teamIndex]
-                Toast.makeText(this, "You picked: $selectedTeam", Toast.LENGTH_SHORT).show()
+
                 sharedPreference.saveTeam(this, selectedTeam, homeGround, wins, coach)
                 sharedPreference.saveTeamScore(this, "10-5")
                 sharedPreference.saveTeamResult(this, "WINNER")
@@ -102,7 +100,7 @@ class MainActivity : AppCompatActivity() {
                 true
             }
             R.id.action_fav -> {
-                Toast.makeText(this,"Favourite Selected ", Toast.LENGTH_SHORT).show()
+
                 val intent= Intent(this,favouriteActivity::class.java)
                 startActivity(intent)
                 true

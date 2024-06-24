@@ -43,6 +43,7 @@
             </LinearLayout>
             <ImageView
                 android:id="@+id/team_logo"
+                android:layout_margin="8dp"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:scaleType="centerCrop"
