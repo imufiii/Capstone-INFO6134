@@ -6,6 +6,29 @@
         <item>Knicks</item>
         <item>Cavaliers</item>
         <item>Bulls</item>
+    </string-array>
 
+    <string-array name="teams_homeground">
+        <item>American Airlines Center</item>
+        <item>TD Garden</item>
+        <item>Madison Square Garden</item>
+        <item>Rocket Mortgage FieldHouse</item>
+        <item>United Center</item>
+    </string-array>
+
+    <string-array name="teams_wins">
+        <item>32</item>
+        <item>17</item>
+        <item>14</item>
+        <item>22</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="teams_coach">
+        <item>Jason Kidd</item>
+        <item>Ime Udoka</item>
+        <item>Tom Thibodeau</item>
+        <item>J.B. Bickerstaff</item>
+        <item>Billy Donovan</item>
     </string-array>
 </resources>

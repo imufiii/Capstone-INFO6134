@@ -35,13 +35,17 @@ class MainActivity : AppCompatActivity() {
 
     private fun showYourFavoriteTeamDialog() {
 
-        val spinner = Spinner(this)
-        val adapter = ArrayAdapter.createFromResource(
-            this,
-            R.array.teams_List,
-            android.R.layout.simple_spinner_item
+        val teamNames = resources.getStringArray(R.array.teams_List)
+        val teamLogos = intArrayOf(
+            R.drawable.mavericks,
+            R.drawable.celtics,
+            R.drawable.new_york_knicks_logo_primary_20129558,
+            R.drawable.cavaliers,
+            R.drawable.chicago_bulls_logo_primary_19672598
         )
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+
+        val spinner = Spinner(this)
+        val adapter = TeamAdapter(this, teamNames, teamLogos)
         spinner.adapter = adapter
 
 
@@ -50,9 +54,12 @@ class MainActivity : AppCompatActivity() {
             .setView(spinner)
             .setPositiveButton("Go Team!") { dialog, which ->
                 val selectedTeam = spinner.selectedItem.toString()
-                sharedPreference.saveTeam(this, selectedTeam)
+                val teamIndex = teamNames.indexOf(selectedTeam)
+                val homeGround = resources.getStringArray(R.array.teams_homeground)[teamIndex]
+                val wins = resources.getStringArray(R.array.teams_wins)[teamIndex]
+                val coach = resources.getStringArray(R.array.teams_coach)[teamIndex]
                 Toast.makeText(this, "You picked: $selectedTeam", Toast.LENGTH_SHORT).show()
-                sharedPreference.saveTeam(this, "Team A")
+                sharedPreference.saveTeam(this, selectedTeam, homeGround, wins, coach)
                 sharedPreference.saveTeamScore(this, "10-5")
                 sharedPreference.saveTeamResult(this, "WINNER")
             }
