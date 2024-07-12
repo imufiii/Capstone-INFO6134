@@ -25,6 +25,10 @@
             android:name=".TeamDetails"
             android:exported="false" />
         <activity
+            android:name=".AchievementsActivity" />
+        <activity
+            android:name=".BettingActivity" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

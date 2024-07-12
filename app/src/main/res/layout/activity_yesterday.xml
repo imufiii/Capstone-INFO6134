@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="13dp"
-            android:backgroundTint="@color/blue"
+            android:backgroundTint="@color/bb1"
             android:text="Yesterday"
             android:textSize="11sp"
             app:cornerRadius="8dp" />
@@ -206,10 +206,13 @@
 
             <Button
                 android:id="@+id/backToday"
-                android:layout_width="wrap_content"
+                android:layout_width="400dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Back" />
+                android:text="Back"
+                android:backgroundTint="@color/bb1"
+                android:textColor="@color/bt1"
+                app:cornerRadius="8dp"/>
         </LinearLayout>
     </ScrollView>
 
