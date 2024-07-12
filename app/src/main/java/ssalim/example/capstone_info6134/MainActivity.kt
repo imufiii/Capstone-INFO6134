@@ -84,6 +84,13 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.cardView3 -> {
                 Toast.makeText(this, "Team Betting", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, BettingActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.cardView4 -> {
+                Toast.makeText(this, "Achievements", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, AchievementsActivity::class.java)
+                startActivity(intent)
             }
         }
     }
