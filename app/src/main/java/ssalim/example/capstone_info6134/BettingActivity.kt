@@ -11,7 +11,6 @@ class BettingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_betting)
 
-        // Sample achievements data
         val achievements = "You won 5 games!"
 
         val btnViewAchievements: Button = findViewById(R.id.btnViewAchievements)

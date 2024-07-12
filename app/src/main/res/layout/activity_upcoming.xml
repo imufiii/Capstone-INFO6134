@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Buttons Layout -->
     <LinearLayout
         android:id="@+id/buttonsLayout"
         android:layout_width="match_parent"
@@ -52,7 +51,6 @@
 
     </LinearLayout>
 
-    <!-- ScrollView to contain multiple CardViews -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -63,7 +61,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- CardView Layout 1 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -76,7 +73,6 @@
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
-                <!-- Content Inside CardView -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -113,7 +109,6 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/time_1"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
@@ -157,7 +152,6 @@
                             android:orientation="vertical"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/time_1"
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView

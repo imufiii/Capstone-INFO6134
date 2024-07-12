@@ -17,9 +17,7 @@ class AchievementsActivity : AppCompatActivity() {
 
         val btnSave: Button = findViewById(R.id.btnSave)
         btnSave.setOnClickListener {
-            // Code to save the edited achievements
             val editedAchievements = etAchievements.text.toString()
-            // You can save this data to a database or shared preferences
         }
     }
 }
