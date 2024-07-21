@@ -46,46 +46,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView">
-
-            <Button
-                android:id="@+id/organizeBtn"
-
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="4dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/bb1"
-                android:text="Organize"
-                android:textColor="@color/bt1"
-                android:textSize="15sp"
-                app:cornerRadius="8dp" />
-
-            <Button
-                android:id="@+id/groupBtn"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="4dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/bb1"
-                android:text="Group"
-                android:textColor="@color/bt1"
-                android:textSize="15sp"
-                app:cornerRadius="8dp" />
-
-            <Button
-                android:id="@+id/filterBtn"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/bb1"
-                android:text="Filter"
-                android:textColor="@color/bt1"
-                android:textSize="15sp"
-                app:cornerRadius="8dp" />
-        </LinearLayout>
+            app:layout_constraintTop_toBottomOf="@+id/imageView"/>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView4"
