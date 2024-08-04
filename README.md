@@ -27,10 +27,8 @@ Arul Sajeevkumar:
 4. user can earn achievements badges
 
 Shahryar Salim: 
-1. ⁠user can change language
-2. ⁠⁠user can view details(score, name, and result of win or lose) for the team they have chose
-3. user can set reminder (date/time) for betting on a team or to check the team score.
-4. ⁠⁠⁠⁠user can organize, group, filter or sort the teams they have chosen.
+1. ⁠⁠user can view details(score, name, and result of win or lose) for the team they have chose
+2. user can set reminder (date/time) for betting on a team or to check the team score.
 
 Mufeed Muneer:  
 1. users can save and delete a Team as favourites
