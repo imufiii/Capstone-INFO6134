@@ -98,17 +98,15 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.action_settings -> {
-                Toast.makeText(this, "Settings selected", Toast.LENGTH_SHORT).show()
-                true
-            }
-            R.id.action_about -> {
-                Toast.makeText(this, "About selected", Toast.LENGTH_SHORT).show()
-                true
-            }
             R.id.action_fav -> {
 
                 val intent= Intent(this,favouriteActivity::class.java)
+                startActivity(intent)
+                true
+            }
+            R.id.action_reminder -> {
+
+                val intent= Intent(this,ReminderActivity::class.java)
                 startActivity(intent)
                 true
             }

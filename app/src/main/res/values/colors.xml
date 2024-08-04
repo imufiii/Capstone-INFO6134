@@ -12,4 +12,9 @@
     <color name="st1">#757575</color>
     <color name="bb1">#6200EE</color>
     <color name="bt1">#FFFFFF</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="primary_text_color">#333333</color>
+    <color name="secondary_text_color">#777777</color>
+    <color name="button_background">#6200EE</color>
+    <color name="gray">#B0B0B0</color>
 </resources>
