@@ -32,6 +32,6 @@ Shahryar Salim:
 
 Mufeed Muneer:  
 1. users can save and delete a Team as favourites
-2. users can add and bet on the team scores
+
 3. ⁠users have an animated splash screen when starting app
-4. ⁠user can scan qrcode
+
