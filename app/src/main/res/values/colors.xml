@@ -17,4 +17,6 @@
     <color name="secondary_text_color">#777777</color>
     <color name="button_background">#6200EE</color>
     <color name="gray">#B0B0B0</color>
+    <color name="locked_border">#979797</color>
+    <color name="card_background">#FFFFFF</color>
 </resources>
