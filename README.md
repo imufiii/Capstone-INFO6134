@@ -21,10 +21,8 @@ Shahryar Salim
 ## Features:
 
 Arul Sajeevkumar:
-1. users can set the app to dark or light mode in the apps settings
-2. user can get match fixtures and league schedule
-3. user have an in app tutorial when using the app for the first time.
-4. user can earn achievements badges
+1. user can get match fixtures and league schedule
+2. user can earn achievements badges
 
 Shahryar Salim: 
 1. ⁠⁠user can view details(score, name, and result of win or lose) for the team they have chose
