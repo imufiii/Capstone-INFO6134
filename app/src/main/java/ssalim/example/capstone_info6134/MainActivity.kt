@@ -11,9 +11,12 @@ import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat.startActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        Thread.sleep(3000)
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val myFavoriteTeam= sharedPreference.getSavedTeam(this)
@@ -82,11 +85,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
                 Toast.makeText(this, "League Fixture", Toast.LENGTH_SHORT).show()
             }
-            R.id.cardView3 -> {
-                Toast.makeText(this, "Team Betting", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, BettingActivity::class.java)
-                startActivity(intent)
-            }
+
             R.id.cardView4 -> {
                 Toast.makeText(this, "Achievements", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, AchievementsActivity::class.java)

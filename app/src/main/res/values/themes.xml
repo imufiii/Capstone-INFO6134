@@ -1,9 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+
     <style name="Base.Theme.CapstoneINFO6134" parent="Theme.Material3.DayNight">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
     </style>
 
     <style name="Theme.CapstoneINFO6134" parent="Base.Theme.CapstoneINFO6134" />
+    <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/_c5c1546_357a_405f_8b1a_20f83003b56d_3</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.CapstoneINFO6134</item>
+    </style>
 </resources>
