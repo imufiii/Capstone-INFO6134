@@ -48,7 +48,7 @@ class AchievementsActivity : AppCompatActivity() {
 
     private fun showBettingDialog() {
         val inflater = LayoutInflater.from(this)
-        val bettingDialogView = inflater.inflate(R.layout.dialog_betting, null)
+        val bettingDialogView = inflater.inflate(R.layout.dialogu_betting, null)
 
         val radioGroupTeams = bettingDialogView.findViewById<RadioGroup>(R.id.radioGroupTeams)
 
@@ -89,7 +89,7 @@ class AchievementsActivity : AppCompatActivity() {
 
     private fun showAchievementUnlockedDialog() {
         val inflater = LayoutInflater.from(this)
-        val dialogView = inflater.inflate(R.layout.dialog_achievement_unlocked, null)
+        val dialogView = inflater.inflate(R.layout.dialogue_achievement_unlocked, null)
 
         val dialog = AlertDialog.Builder(this)
             .setView(dialogView)

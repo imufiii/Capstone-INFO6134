@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvAchievementUnlocked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Achievement Unlocked!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvAchievementMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have unlocked the 'First Bet Placed' achievement."
+        android:gravity="center"
+        android:paddingBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_gravity="center"/>
+</LinearLayout>

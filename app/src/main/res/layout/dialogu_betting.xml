@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroupTeams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioKnicks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Knicks" />
+
+        <RadioButton
+            android:id="@+id/radioCavaliers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cavaliers" />
+
+        <RadioButton
+            android:id="@+id/radioBulls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bulls" />
+
+    </RadioGroup>
+</LinearLayout>
