@@ -2,6 +2,7 @@ package ssalim.example.capstone_info6134
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.RadioGroup
@@ -20,6 +21,8 @@ class AchievementsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_achievements)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val btnPlaceBet: Button = findViewById(R.id.btnPlaceBet)
         btnPlaceBet.setOnClickListener {
@@ -44,6 +47,16 @@ class AchievementsActivity : AppCompatActivity() {
 
         adapter = AchievementsAdapter(achievements)
         recyclerView.adapter = adapter
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     private fun showBettingDialog() {
@@ -102,5 +115,4 @@ class AchievementsActivity : AppCompatActivity() {
 
         dialog.show()
     }
-
 }
